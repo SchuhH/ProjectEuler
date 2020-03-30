@@ -6,6 +6,6 @@ namespace ProjectEuler.Problems
 {
     class p1
     {
-        1111
+        11112
     }
 }
