@@ -2,11 +2,11 @@
 
 namespace ProjectEuler
 {
-    class Program
+    class TestAnswers
     {
         static void Main(string[] args)
         {
-            test
+          90  
         }
     }
 }
