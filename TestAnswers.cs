@@ -1,4 +1,5 @@
 ﻿using System;
+using ProjectEuler.Problems;
 
 namespace ProjectEuler
 {
