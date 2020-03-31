@@ -4,16 +4,17 @@ using System.Text;
 
 namespace ProjectEuler.Problems
 {
-    class p1
+    class BaseProblem
     {
         /*
          * Execution time: 
          * Notes: 
          * Help: 
          */
-        void P1()
+        void Base()
         {
-            
+
         }
+
     }
 }
