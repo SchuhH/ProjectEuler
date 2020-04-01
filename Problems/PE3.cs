@@ -10,7 +10,6 @@ namespace ProjectEuler.Problems
         /*
          * Question: The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143?
          * Answer: 6857
-         * Execution time: 0.149
          * Notes: was hard because was unsure how to solve for answers > sqrt
          * Help: https://www.mathblog.dk/project-euler-problem-3/, the idea of the sqrt being less then the ans
          */

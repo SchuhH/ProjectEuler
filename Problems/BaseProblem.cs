@@ -11,7 +11,6 @@ namespace ProjectEuler.Problems
         /*
          * Question: 
          * Answer:
-         * Execution time: 
          * Notes: 
          * Help: 
          */

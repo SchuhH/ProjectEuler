@@ -13,7 +13,6 @@ namespace ProjectEuler.Problems
          * numbers is 9009 = 91 × 99.
          * Find the largest palindrome made from the product of two 3-digit numbers.
          * Answer: 906609
-         * Execution time: fast
          * Notes: 
          * Help: 
          */
