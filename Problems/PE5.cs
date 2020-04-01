@@ -25,7 +25,7 @@ namespace ProjectEuler.Problems
             while (!found)
             {
                 num+=20; //only numbers divisible by 20
-                //all numbers not below 1-20 are able to divide the numbers below with a remainder of 0
+                //all numbers not below 1-20 are a factor of the numbers below
                 if (num % 11 != 0) continue;
                 if (num % 12 != 0) continue;
                 if (num % 13 != 0) continue;
