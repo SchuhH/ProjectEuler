@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace ProjectEuler.Problems
 {
-    static class PE6
+    static class PE006
     {
         /*
          * Question: The sum of the squares of the first ten natural numbers is, 1+4+...+100=385

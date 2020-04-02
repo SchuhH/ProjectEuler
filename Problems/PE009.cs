@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace ProjectEuler.Problems
 {
-    static class PE9
+    static class PE009
     {
         /*
          * Question: A Pythagorean triplet is a set of three natural numbers, a < b < c, for which, a^2 + b^2 = c^2

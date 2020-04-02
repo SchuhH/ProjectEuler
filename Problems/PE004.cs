@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace ProjectEuler.Problems
 {
-    static class PE4
+    static class PE004
     {
         /*
          * Question: A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit 

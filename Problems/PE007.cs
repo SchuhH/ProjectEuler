@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace ProjectEuler.Problems
 {
-    static class PE7
+    static class PE007
     {
         /*
          * Question: By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
@@ -21,23 +21,26 @@ namespace ProjectEuler.Problems
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
 
-            int num = 1, count = 0; //start at 3 because every prime number after 2 is odd, so can +=2 for only odd.
-            int[] primeCache = new int[10001]; //keep track of prime numbers
-            primeCache[0] = 2;
-            while (count <10000)
+            int num = 1, count = 1, max = 10001; //start at 3 because every prime number after 2 is odd, so can +=2 for only odd.
+            int[] primeCache = new int[max]; //keep track of prime numbers
+            bool found;
+            while (count < max)
             {
+                found = true;
                 num += 2;
-                for (int i = 0; i< count+1;i++)
+                for (int i = 0; i < count-1; i++)
                 {
-                    if (num%primeCache[i] == 0)
+                    if (primeCache[i] > Math.Sqrt(num)) break;
+                    if (num % primeCache[i] == 0)
                     {
+                        found = false;
                         break;
                     }
-                    if (i == count)
-                    {
-                        count++;
-                        primeCache[count] = num;
-                    }
+                }
+                if (found)
+                {
+                    primeCache[count-1] = num;
+                    count++;
                 }
             }
 
