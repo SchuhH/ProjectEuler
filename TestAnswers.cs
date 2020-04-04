@@ -7,7 +7,7 @@ namespace ProjectEuler
     {
         static void Main(string[] args)
         {
-            Problems.PE013.P13();
+            Problems.PE014.P14();
         }
     }
 }

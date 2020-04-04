@@ -28,6 +28,7 @@ namespace ProjectEuler.Problems
                 myInt.Add(0);
             }
             int remainder;
+            string ans = "";
             for (int i = 0; i<100; i++)
             {
                 remainder = 0;
@@ -45,19 +46,18 @@ namespace ProjectEuler.Problems
                         remainder = 1;
                     }
                 }
-                Console.WriteLine(myInt[49]);
                 if (remainder == 1)
                 {
                     myInt[0]+=10; //initial value can expand the remainder instead of inserting a new value into the beginning of the list
                 }
             }
             stopwatch.Stop();
-            Console.WriteLine(myInt[49]);
             Console.WriteLine($"The elapsed time is: {(double)stopwatch.ElapsedMilliseconds / 1000}");
-            foreach(int x in myInt)
+            for (int i = 0; i<11-myInt[0].ToString().Length; i++)
             {
-                Console.Write(x);
+                ans += myInt[i].ToString();
             }
+            Console.WriteLine(ans);
         }
         private static void CreateIntArr(ref int[,] intArr)
         {
@@ -67,7 +67,6 @@ namespace ProjectEuler.Problems
             {
                 for (int i = 0; i < 50; i++)
                 {
-                    
                     intArr[count, i] = (int)Char.GetNumericValue(line[i]);
                 }
                 count++;

@@ -18,12 +18,12 @@ namespace ProjectEuler.Problems
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
-
+            var ans = 0;
 
 
             stopwatch.Stop();
             Console.WriteLine($"The elapsed time is: {(double)stopwatch.ElapsedMilliseconds/1000}");
-            Console.Write(1);
+            Console.Write(ans);
         }
 
     }
